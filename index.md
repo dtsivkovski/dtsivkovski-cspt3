@@ -15,5 +15,5 @@
 
 ## Notes
 
-#### TPT Week 0 - Topic
+#### TPT Week 0
 - Bullet pointed notes
