@@ -1,7 +1,7 @@
 # Daniel Tsivkovski's Github Page
 
 - [[Link to individual repo]](https://github.com/dtsivkovski/dtsivkovski-cspt3)
-- [[Link to team repo]](https://github.com/)
+- [[Link to team repo]](https://github.com/LindaLiu1202/just_cakes/)
 
 ## Timebox
 
