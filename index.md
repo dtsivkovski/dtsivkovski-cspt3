@@ -9,12 +9,11 @@
 
 | Topic | Links/Info |
 | ----- | ----- |
-| Notes | Link |
+| Notes | [Link](https://dtsivkovski.github.io/dtsivkovski-cspt3/#tpt-week-0) |
 
 
 
 ## Notes
 
-#### TPT Week 0
-
-- Notes go here
+#### TPT Week 0 - Topic
+- Bullet pointed notes
