@@ -1,3 +1,5 @@
+{% include navbar.html %}
+
 # Test Prep Section
 
 ### Week 0
