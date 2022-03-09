@@ -4,7 +4,7 @@
     <tr>
         <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/">Main</a></td>
         <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/dataProject">Data Structures Project</a></td>
-        <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/testPrep">Test Prep</a></td>
+        <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/testPrep">Test Prep / Notes</a></td>
         <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/createtask">Create Task</a></td>
     </tr>
 </table>
