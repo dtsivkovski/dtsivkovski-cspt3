@@ -52,7 +52,7 @@ def buildMenu(banner, options):
         print(key, '-', value[0])
 
     # get user choice
-    choice = input("Type your choice> ")
+    choice = input("Type your choice - ")
 
     # validate choice and run
     # execute selection

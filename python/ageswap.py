@@ -10,8 +10,8 @@ def ageswap(age1, age2):
     return(age1, age2)
 
 def ageswap_run():
-    age1 = input("What is the first age?    ")
-    age2 = input("What is the second age?   ")
+    age1 = input("What is the first age? - ")
+    age2 = input("What is the second age? - ")
     print("=" * 25)
     print("Original: ", age1, age2)
     age1, age2 = ageswap(age1, age2)

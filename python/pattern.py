@@ -9,21 +9,22 @@ COMP_COLOR = u"\u001B[0m\u001B[2D"
 
 
 
-# print ship with colors and leading spaces
+# print computer moving across screen
 def pattern_print(position):
+    print(ANSI_CLEAR_SCREEN)
     print(ANSI_HOME_CURSOR)
-    sp = " " * position
+    os = " " * position
     print(FIRE_COLOR)
-    print(sp + "                  .----.")
-    print(sp + "      .---------. | == |")
-    print(sp + '      |.-"""""-.| |----|')
-    print(sp + "      ||       || | == |")
-    print(sp + "      ||       || |----|")
-    print(sp + "      |'-.....-'| |::::|")
-    print(sp + '      `"")---(""` |___.|')
-    print(sp + '     /:::::::::::' + '\ ' + '" ' +  ' "')
-    print(sp + "    /:::=======:::\     ")
-    print(sp + '    `"""""""""""""`     ')
+    print(os + "                  .----.")
+    print(os + "      .---------. | == |")
+    print(os + '      |.-"""""-.| |----|')
+    print(os + "      ||       || | == |")
+    print(os + "      ||       || |----|")
+    print(os + "      |'-.....-'| |::::|")
+    print(os + '      `"")---(""` |___.|')
+    print(os + '     /:::::::::::' + '\ ' + '" ' +  ' "')
+    print(os + "    /:::=======:::\     ")
+    print(os + '    `"""""""""""""`     ')
     print(COMP_COLOR)
 
 
@@ -35,12 +36,12 @@ def pattern_print(position):
 # Pattern function, iterface into this file
 def patternfunc():
 
-    # loop control variables
-    start = 0  # start at zero
-    distance = 100  # how many times to repeat
-    step = 1  # count by 2
+    # Animation Variables
+    start = 0  # Start with no offset
+    distance = 100  # Number of loops
+    step = 1  # Step amount
 
-    # loop purpose is to animate candle moving
+    # Loop to move the computer to the right
     for position in range(start, distance, step):
-        pattern_print(position)  # call to function with parameter
+        pattern_print(position)  
         time.sleep(.1)
