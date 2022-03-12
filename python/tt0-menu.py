@@ -15,6 +15,7 @@
 import ageswap
 import matrix
 import pattern
+import os
 
 
 # Main list of [Prompts, Actions]
@@ -64,6 +65,7 @@ def buildMenu(banner, options):
             return
         try:
             # try as function
+            os.system("clear")
             action = prompts.get(choice)[1]
             action()
         except TypeError:
