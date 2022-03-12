@@ -18,3 +18,6 @@
 ## Timebox (Newest First)
 
 #### Week 0
+- [TT0 - Python Menu](https://replit.com/@DanielTsivkovsk/dtsivkovski-cspt3#.replit) 
+- [5.1-5.2 Notes](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/5.1-5.2)
+   
