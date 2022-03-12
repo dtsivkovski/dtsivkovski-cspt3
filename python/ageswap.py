@@ -2,7 +2,7 @@
 
 
 def ageswap(age1, age2):
-    if (age1 > age2):
+    if (int(age1) > int(age2)):
         # swapping age by assigning one of them to a temp variable
         temp = age1
         age1 = age2
