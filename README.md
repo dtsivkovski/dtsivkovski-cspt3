@@ -17,7 +17,7 @@
 
 ## Timebox (Newest First)
 
-#### Week 0
+#### Week 0 - [[Review Ticket]](https://github.com/dtsivkovski/dtsivkovski-cspt3/issues/1)
 - [TT0 - Python Menu](https://replit.com/@DanielTsivkovsk/dtsivkovski-cspt3#.replit) 
 - [5.1-5.2 Notes](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/5.1-5.2)
    
