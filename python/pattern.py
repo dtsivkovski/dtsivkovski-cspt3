@@ -4,7 +4,7 @@ import time
 ANSI_CLEAR_SCREEN = u"\u001B[2J"
 ANSI_HOME_CURSOR = u"\u001B[0;0H\u001B[2"
 OCEAN_COLOR = u"\u001B[44m\u001B[2D"
-FIRE_COLOR = u"\u001B[31m\u001B[2D"
+RED_COLOR = u"\u001B[31m\u001B[2D"
 COMP_COLOR = u"\u001B[0m\u001B[2D"
 
 
@@ -14,7 +14,7 @@ def pattern_print(position):
     print(ANSI_CLEAR_SCREEN)
     print(ANSI_HOME_CURSOR)
     os = " " * position
-    print(FIRE_COLOR)
+    print(RED_COLOR)
     print(os + "                  .----.")
     print(os + "      .---------. | == |")
     print(os + '      |.-"""""-.| |----|')
@@ -27,11 +27,8 @@ def pattern_print(position):
     print(os + '    `"""""""""""""`     ')
     print(COMP_COLOR)
 
-
-
-
-
-
+def staticpattern():
+  pattern_print(0)
 
 # Pattern function, iterface into this file
 def patternfunc():

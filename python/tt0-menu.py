@@ -25,7 +25,11 @@ import os
 main_menu = [
     ["Age Swap", ageswap.ageswap_run],
     ["Matrix", matrix.matrix_tester],
-    ["Pattern", pattern.patternfunc]
+]
+
+patterns_sub_menu = [
+    ["Animated Pattern", pattern.patternfunc],
+    ["Static Pattern", pattern.staticpattern],
 ]
 
 # Menu banner and formatted borders
@@ -37,8 +41,12 @@ banner = f"\n{thinborder}\nPlease Select An Option\n{border}"
 def menu():
     title = f"{border}\n" + "Function Menu" + banner
     menu_list = main_menu.copy()
-    # menu_list.append(["pattern", patterns_submenu])
+    menu_list.append(["Pattern", patterns_submenu])
     buildMenu(title, menu_list)
+
+def patterns_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, patterns_sub_menu)
 
 def buildMenu(banner, options):
     # header for menu
@@ -77,10 +85,10 @@ def buildMenu(banner, options):
             # end function try
         # end prompts try
     except ValueError:
-        # not a number error
+        # NAN error
         print(f"Not a number: {choice}")
     except UnboundLocalError:
-        # traps all other errors
+        # All other errors covered here
         print(f"Invalid choice: {choice}")
     # end validation try
 
