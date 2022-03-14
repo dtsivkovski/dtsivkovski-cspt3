@@ -28,13 +28,14 @@ main_menu = [
     ["Pattern", pattern.patternfunc]
 ]
 
-# Menu banner is typically defined by menu owner
+# Menu banner and formatted borders
+thinborder = "-" * 25
 border = "=" * 25
-banner = f"\n{border}\nPlease Select An Option\n{border}"
+banner = f"\n{thinborder}\nPlease Select An Option\n{border}"
 
 
 def menu():
-    title = "Function Menu" + banner
+    title = f"{border}\n" + "Function Menu" + banner
     menu_list = main_menu.copy()
     # menu_list.append(["pattern", patterns_submenu])
     buildMenu(title, menu_list)
