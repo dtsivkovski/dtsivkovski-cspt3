@@ -22,8 +22,8 @@ def pattern_print(position):
     print(os + "      ||       || |----|")
     print(os + "      |'-.....-'| |::::|")
     print(os + '      `"")---(""` |___.|')
-    print(os + u'\u001B[0m\u001B[2D     /:::::::::::' + '\ ' + u'\u001b[35;1m" ' +  ' "')
-    print(os + u"\u001B[0m\u001B[2D    /:::=======:::\     ")
+    print(os + "  " u'\u001B[0m\u001B[2D     /:::::::::::' + '\ ' + u'\u001b[35;1m" ' +  ' "')
+    print(os + "  " + u"\u001B[0m\u001B[2D    /:::=======:::\     ")
     print(os + '    `"""""""""""""`     ')
     print(COMP_COLOR)
 
