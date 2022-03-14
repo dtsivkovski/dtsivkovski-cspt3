@@ -4,7 +4,7 @@ import time
 ANSI_CLEAR_SCREEN = u"\u001B[2J"
 ANSI_HOME_CURSOR = u"\u001B[0;0H\u001B[2"
 OCEAN_COLOR = u"\u001B[44m\u001B[2D"
-RED_COLOR = u"\u001B[31m\u001B[2D"
+MAGENTA_COLOR = u"\u001b[35;1m"
 COMP_COLOR = u"\u001B[0m\u001B[2D"
 
 
@@ -14,7 +14,7 @@ def pattern_print(position):
     print(ANSI_CLEAR_SCREEN)
     print(ANSI_HOME_CURSOR)
     os = " " * position
-    print(RED_COLOR)
+    print(MAGENTA_COLOR)
     print(os + "                  .----.")
     print(os + "      .---------. | == |")
     print(os + '      |.-"""""-.| |----|')
@@ -22,8 +22,8 @@ def pattern_print(position):
     print(os + "      ||       || |----|")
     print(os + "      |'-.....-'| |::::|")
     print(os + '      `"")---(""` |___.|')
-    print(os + '     /:::::::::::' + '\ ' + '" ' +  ' "')
-    print(os + "    /:::=======:::\     ")
+    print(os + u'\u001B[0m\u001B[2D     /:::::::::::' + '\ ' + u'\u001b[35;1m" ' +  ' "')
+    print(os + u"\u001B[0m\u001B[2D    /:::=======:::\     ")
     print(os + '    `"""""""""""""`     ')
     print(COMP_COLOR)
 
@@ -35,7 +35,7 @@ def patternfunc():
 
     # Animation Variables
     start = 0  # Start with no offset
-    distance = 100  # Number of loops
+    distance = 50  # Number of loops
     step = 1  # Step amount
 
     # Loop to move the computer to the right

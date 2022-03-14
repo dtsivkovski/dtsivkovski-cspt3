@@ -45,7 +45,7 @@ def menu():
     buildMenu(title, menu_list)
 
 def patterns_submenu():
-    title = "Function Submenu" + banner
+    title = f"{border}\n" + "Patterns Submenu" + banner
     buildMenu(title, patterns_sub_menu)
 
 def buildMenu(banner, options):
@@ -71,6 +71,7 @@ def buildMenu(banner, options):
         choice = int(choice)
         if choice == 0:
             # stop
+            os.system("clear")
             return
         try:
             # try as function
