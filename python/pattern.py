@@ -27,10 +27,11 @@ def pattern_print(position):
     print(os + '    `"""""""""""""`     ')
     print(COMP_COLOR)
 
+# Pattern function for the non-animated(static) pattern
 def staticpattern():
   pattern_print(0)
 
-# Pattern function, iterface into this file
+# Pattern function for drawing the animated pattern
 def patternfunc():
 
     # Animation Variables
