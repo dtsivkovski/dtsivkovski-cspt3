@@ -42,25 +42,26 @@ def print_data(n):
 ## hack 2b: def while_loop(0)
 ## hack 2c : def recursive_loop(0)
 
-def tester():
-    print("For loop")
-    for_loop()
-    print("While loop")
-    while_loop(0)  # requires initial index to start while
-    print("Recursive loop")
-    recursive_loop(0)  # requires initial index to start recursion
-
 # for loop iterates on length of InfoDb
 def for_loop():
+    print("=" * 25)
+    print("For loop")
+    print("-" * 25)
     for n in range(len(InfoDb)):
         print_data(n)
 
 # while loop contains an initial n and an index incrementing statement (n += 1)
 def while_loop(n):
+    print("=" * 25)
+    print("While loop")
+    print("-" * 25)
     while n < len(InfoDb):
         print_data(n)
         n += 1
     return
+
+def while_loop_run():
+    while_loop(0)
 
 # recursion simulates loop incrementing on each call (n + 1) until exit condition is met
 def recursive_loop(n):
@@ -69,3 +70,22 @@ def recursive_loop(n):
         recursive_loop(n + 1)
     return # exit condition
 
+def recursive_loop_run():
+    print("=" * 25)
+    print("Recursive loop")
+    print("-" * 25)
+    recursive_loop(0)
+    print("=" * 25)
+
+
+def tester():
+    
+    for_loop()
+    
+    while_loop(0)  # requires initial index to start while
+    
+    recursive_loop_run(0)  # requires initial index to start recursion
+
+# this only applies if the file is run as main
+if __name__ == "__main__":
+    tester()

@@ -5,16 +5,20 @@ def recur_factorial(n):
     else:
         return n * recur_factorial(n-1)
 
+# Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
 def fibonacci():
   print("Function not working at the moment")
 
 # this is test driver or code that plays when executed directly, versus import which will not run these statements
-def tester():
+def factorial_tester():
     num = int(input("Enter a number for factorial: "))
     # check if the number is negative
+    print("-" * 25)
     if num < 0:
         print("Sorry, factorial does not exist for negative numbers")
     else:
         print("The factorial of", num, "is", recur_factorial(num))
 
-# Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
+# this only applies if the file is run as main
+if __name__ == "__main__":
+    factorial_tester()
