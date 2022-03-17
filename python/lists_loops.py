@@ -77,14 +77,27 @@ def recursive_loop_run():
     recursive_loop(0)
     print("=" * 25)
 
+def list_finder():
+  num = int(input("Which index do you want to search (0-3): "))
+  print("-" * 25)
+  try:
+    print(InfoDb[num]["FirstName"] + InfoDb[num]["LastName"])
+    print("Residence: " + InfoDb[num]["Residence"])
+    print("Owns Tech: ")
+    for i in range (0)
+  
+  except:
+    print("Invalid index given.")
 
 def tester():
     
-    for_loop()
-    
-    while_loop(0)  # requires initial index to start while
-    
-    recursive_loop_run(0)  # requires initial index to start recursion
+  for_loop()
+  
+  while_loop(0)  # requires initial index to start while
+  
+  recursive_loop_run(0)  # requires initial index to start recursion
+
+  list_finder()
 
 # this only applies if the file is run as main
 if __name__ == "__main__":

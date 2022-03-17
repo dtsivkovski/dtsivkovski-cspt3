@@ -42,7 +42,8 @@ math_sub_menu = [
 loops_sub_menu = [
     ["For Loop", lists_loops.for_loop],
     ["While Loop", lists_loops.while_loop_run],
-    ["Recursive Loop", lists_loops.recursive_loop_run]
+    ["Recursive Loop", lists_loops.recursive_loop_run],
+    ["List Search", lists_loops.list_finder]
 ]
 
 # Menu banner and formatted borders
@@ -56,7 +57,7 @@ def menu():
     menu_list = main_menu.copy()
     menu_list.append(["Pattern", patterns_submenu])
     menu_list.append(["Math Functions", math_submenu])
-    menu_list.append(["Loops", loops_submenu])
+    menu_list.append(["Lists/Loops", loops_submenu])
     buildMenu(title, menu_list)
 
 def patterns_submenu():
@@ -68,7 +69,7 @@ def math_submenu():
     buildMenu(title, math_sub_menu)
 
 def loops_submenu():
-    title = f"{border}\n" + "Loops Submenu" + banner
+    title = f"{border}\n" + "Lists/Loops Submenu" + banner
     buildMenu(title, loops_sub_menu)
 
 def buildMenu(banner, options):
