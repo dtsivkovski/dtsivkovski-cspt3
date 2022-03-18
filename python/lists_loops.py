@@ -30,6 +30,13 @@ InfoDb.append({
                "Owns_Tech":["Desktop","iPhone", "Chromebook"]
               })  
 
+InfoDb.append({  
+               "FirstName": "Everitt",  
+               "LastName": "Cheng",  
+               "Residence": "San Diego",  
+               "Owns_Tech":["Desktop","Laptop", "Android Phone", "Samsung Smart Fridge"]
+              })  
+
 
 def print_data(n):
     print(InfoDb[n]["FirstName"], InfoDb[n]["LastName"])  # using comma puts space between values
@@ -78,14 +85,14 @@ def recursive_loop_run():
     print("=" * 25)
 
 def list_finder():
-  num = int(input("Which index do you want to search (0-3): "))
+  num = int(input("Which index do you want to search (0-" + str(len(InfoDb)-1) +"): "))
   print("-" * 25)
   try:
-    print(InfoDb[num]["FirstName"] + InfoDb[num]["LastName"])
+    print(InfoDb[num]["FirstName"] + " "+ InfoDb[num]["LastName"])
     print("Residence: " + InfoDb[num]["Residence"])
     print("Owns Tech: ")
-    for i in range (0)
-  
+    for i in range (0, len(InfoDb[num]["Owns_Tech"])):
+      print("  - " + InfoDb[num]["Owns_Tech"][i])
   except:
     print("Invalid index given.")
 

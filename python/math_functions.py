@@ -8,6 +8,7 @@ def recur_factorial(n):
     if n == 1 or n == 0:
         return 1
     else:
+        print(n)
         return n * recur_factorial(n-1)
 
 # Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
@@ -33,9 +34,13 @@ def fibonacci_tester():
     if num < 0:
         print("Sorry, fibonacci does not exist for negative numbers.")
     else:
+      try:
         result = fibonacci(num)
         print(MAGENTA_COLOR)
         print("The result of fibonacci", num, "times is", result)
+        print(COMP_COLOR)
+      except:
+        print("Error - Invalid Input")
         print(COMP_COLOR)
 
 
