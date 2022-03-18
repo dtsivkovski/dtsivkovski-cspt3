@@ -12,6 +12,16 @@ def recur_factorial(n):
         return n * recur_factorial(n-1)
 
 # Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
+def recur_fibonacci(n,h,i,j):
+    if h == 1 or h == 0:
+        return 1
+    else:
+        n = i + j
+        i = j
+        j = n
+        print(n)
+        return recur_fibonacci(n,h-1,i,j)
+
 def fibonacci(n):
     h = 0
     i = 0
@@ -43,6 +53,21 @@ def fibonacci_tester():
         print("Error - Invalid Input")
         print(COMP_COLOR)
 
+def recur_fibonacci_tester():
+  num = int(input("Enter a number for fibonacci: "))
+  print("-" * 25)
+  if num < 0:
+      print("Sorry, fibonacci does not exist for negative numbers.")
+  else:
+    try:
+      result = fibonacci(0, num, 0, 1)
+      print(MAGENTA_COLOR)
+      print("The result of fibonacci", num, "times is", result)
+      print(COMP_COLOR)
+    except:
+      print("Error - Invalid Input")
+      print(COMP_COLOR)
+
 
 # this is test driver or code that plays when executed directly, versus import which will not run these statements
 def factorial_tester():
@@ -58,5 +83,4 @@ def factorial_tester():
 
 # this only applies if the file is run as main
 if __name__ == "__main__":
-    factorial_tester()
-    fibonacci_tester()
+    recur_fibonacci_tester()

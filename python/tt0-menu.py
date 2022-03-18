@@ -36,6 +36,7 @@ patterns_sub_menu = [
 
 math_sub_menu = [
     ["Fibonacci", math_functions.fibonacci_tester],
+    ["Recursive Fibonacci", math_functions.recur_fibonacci_tester],
     ["Recursive Factorial", math_functions.factorial_tester]
 ]
 
