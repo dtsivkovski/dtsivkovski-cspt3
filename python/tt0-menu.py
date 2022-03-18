@@ -25,21 +25,30 @@ import lists_loops
 # 1. file names will be run by exec(open("filename.py").read())
 # 2. function references will be executed directly file.function()
 main_menu = [
+    # ["Age Swap", ageswap.ageswap_run],
+    # ["Matrix", matrix.matrix_tester],
+]
+
+# Week 0 Items
+week0_menu = [
     ["Age Swap", ageswap.ageswap_run],
     ["Matrix", matrix.matrix_tester],
 ]
-
 patterns_sub_menu = [
     ["Animated Pattern", pattern.patternfunc],
     ["Static Pattern", pattern.staticpattern],
 ]
 
+# Week 1 Items
+week1_menu = [
+    # ["Age Swap", ageswap.ageswap_run],
+    # ["Matrix", matrix.matrix_tester],
+]
 math_sub_menu = [
     ["Fibonacci", math_functions.fibonacci_tester],
     ["Recursive Fibonacci", math_functions.recur_fibonacci_tester],
     ["Recursive Factorial", math_functions.factorial_tester]
 ]
-
 loops_sub_menu = [
     ["For Loop", lists_loops.for_loop],
     ["While Loop", lists_loops.while_loop_run],
@@ -56,10 +65,27 @@ banner = f"\n{thinborder}\nPlease Select An Option\n{border}"
 def menu():
     title = f"{border}\n" + "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Pattern", patterns_submenu])
-    menu_list.append(["Math Functions", math_submenu])
-    menu_list.append(["Lists/Loops", loops_submenu])
+    menu_list.append(["Week 0", week0_submenu])
+    menu_list.append(["Week 1", week1_submenu])
+    # menu_list.append(["Math Functions", math_submenu])
+    # menu_list.append(["Lists/Loops", loops_submenu])
     buildMenu(title, menu_list)
+
+# Submenu for week0 tasks
+def week0_submenu():
+  title = f"{border}\n" + "Week 1 Submenu" + banner
+  menu_list = week0_menu.copy()
+  menu_list.append(["Pattern", patterns_submenu])
+  buildMenu(title, menu_list)
+
+# Week 1 Submenu
+def week1_submenu():
+  title = f"{border}\n" + "Week 1 Submenu" + banner
+  menu_list = week1_menu.copy()
+  menu_list.append(["Math Functions", math_submenu])
+  menu_list.append(["Lists/Loops", loops_submenu])
+  buildMenu(title, menu_list)
+  
 
 def patterns_submenu():
     title = f"{border}\n" + "Patterns Submenu" + banner

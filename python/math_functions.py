@@ -13,7 +13,7 @@ def recur_factorial(n):
 
 # Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
 def recur_fibonacci(n,h,i,j):
-    if h == 1 or h == 0:
+    if h == 0:
         return n
     else:
         # adds previous two values together, assign new values
