@@ -7,9 +7,106 @@
 
 {% include repl_embed.html %}
 
-[TT0 - Python Menu](https://replit.com/@DanielTsivkovsk/dtsivkovski-cspt3#.replit)
+[Repl Menu Link](https://replit.com/@DanielTsivkovsk/dtsivkovski-cspt3#.replit)
 
 ### Code Snippets
+
+### Week 1
+
+InfoDb Lists
+```python
+def print_data(n):
+    print(InfoDb[n]["FirstName"], InfoDb[n]["LastName"])  # using comma puts space between values
+    print("\t", "Tech: ", end="")  # \t is a tab indent, end="" make sure no return occurs
+    print(", ".join(InfoDb[n]["Owns_Tech"]))  # join allows printing a string list with separator
+    print()
+
+def list_finder():
+  num = int(input("Which index do you want to search (0-" + str(len(InfoDb)-1) +"): "))
+  print("-" * 25)
+  try:
+    # Prints all info of the given index
+    print(InfoDb[num]["FirstName"] + " "+ InfoDb[num]["LastName"])
+    print("Residence: " + InfoDb[num]["Residence"])
+    print("Owns Tech: ")
+    for i in range (0, len(InfoDb[num]["Owns_Tech"])):
+      print("  - " + InfoDb[num]["Owns_Tech"][i])
+  except:
+    # Prints this if the index is not in the list
+    print("Invalid index given.")
+```
+
+InfoDb Loops
+```python
+# for loop iterates on length of InfoDb
+def for_loop():
+    print("=" * 25)
+    print("For loop")
+    print("-" * 25)
+    for n in range(len(InfoDb)):
+        print_data(n)
+
+# while loop contains an initial n and an index incrementing statement (n += 1)
+def while_loop(n):
+    print("=" * 25)
+    print("While loop")
+    print("-" * 25)
+    while n < len(InfoDb):
+        print_data(n)
+        n += 1
+    return
+
+def while_loop_run():
+    while_loop(0)
+
+# recursion simulates loop incrementing on each call (n + 1) until exit condition is met
+def recursive_loop(n):
+    if n < len(InfoDb):
+        print_data(n)
+        recursive_loop(n + 1)
+    return # exit condition
+
+def recursive_loop_run():
+    print("=" * 25)
+    print("Recursive loop")
+    print("-" * 25)
+    recursive_loop(0)
+    print("=" * 25)
+```
+
+Fibonacci
+```python 
+# Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
+def recur_fibonacci(n,h,i,j):
+    if h == 0:
+        return n
+    else:
+        # adds previous two values together, assign new values
+        n = i + j
+        i = j
+        j = n
+        # print the value 
+        print(n)
+        return recur_fibonacci(n,h-1,i,j)
+
+# Tester for the recursive fibonacci function with try/except
+def recur_fibonacci_tester():
+  num = int(input("Enter a number for fibonacci: "))
+  print("-" * 25)
+  if num < 0:
+      print("Sorry, fibonacci does not exist for negative numbers.")
+  else:
+    try:
+        result = recur_fibonacci(0, num, 0, 1)
+        print(MAGENTA_COLOR)
+        print("The result of fibonacci", num, "times is", result)
+        print(COMP_COLOR)
+    except:
+        print("Error - Invalid Input")
+        print(COMP_COLOR)
+```
+
+### Week 0
 
 Menu and Patterns Submenu
 ```python
