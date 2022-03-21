@@ -17,7 +17,7 @@ def final_total(subtotal):
   # Calculating if total is over $60 and applying a discount if it is
   if subtotal > 60:
     print("Because your order is over $60, you qualify for a 20% discount!" )
-    total = round((0.2 * subtotal), 2)
+    total = round((0.8 * subtotal), 2)
   else:
     total = subtotal
   # Formatting and printing the total
@@ -28,7 +28,7 @@ def final_total(subtotal):
   sys.exit()
 
 # Dictionary with values and predefined function parameters
-price_dict = [
+price_list = [
   ["Shoes", 55, 'price_adder(55)'],
   ["Socks", 5, 'price_adder(5)'],
   ["T-Shirt", 10, 'price_adder(10)'],
@@ -45,7 +45,7 @@ def shop_menu():
   prompts = {0: ["Calculate Final Total", str(subtotal) + " subtotal" , 'final_total(subtotal)']}
 
   # Creates a dictionary with all menu options
-  for item in price_dict:
+  for item in price_list:
     index = len(prompts)
     prompts[index] = item
 
@@ -55,7 +55,7 @@ def shop_menu():
 
   user_choice = input("Please select an item: ")
 
-  # Attempt to add user's choice to the total.
+  # Attempt to run selected function (adding to or calculating total)
   try:
     uchoice = int(user_choice)
     try:
