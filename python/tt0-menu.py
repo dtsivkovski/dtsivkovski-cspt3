@@ -17,6 +17,7 @@ import os
 # Week 1 imports
 import math_functions
 import lists_loops
+import createtask
 
 
 
@@ -27,6 +28,7 @@ import lists_loops
 main_menu = [
     # ["Age Swap", ageswap.ageswap_run],
     # ["Matrix", matrix.matrix_tester],
+    ['Create Task', createtask.shop_menu]
 ]
 
 # Week 0 Items

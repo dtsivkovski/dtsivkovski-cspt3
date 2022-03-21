@@ -88,12 +88,14 @@ def list_finder():
   num = int(input("Which index do you want to search (0-" + str(len(InfoDb)-1) +"): "))
   print("-" * 25)
   try:
+    # Prints all info of the given index
     print(InfoDb[num]["FirstName"] + " "+ InfoDb[num]["LastName"])
     print("Residence: " + InfoDb[num]["Residence"])
     print("Owns Tech: ")
     for i in range (0, len(InfoDb[num]["Owns_Tech"])):
       print("  - " + InfoDb[num]["Owns_Tech"][i])
   except:
+    # Prints this if the index is not in the list
     print("Invalid index given.")
 
 def tester():
