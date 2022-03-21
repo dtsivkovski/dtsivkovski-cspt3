@@ -19,8 +19,10 @@
 
 #### Week 1 - [[Review Ticket]](https://github.com/dtsivkovski/dtsivkovski-cspt3/issues/2)
 - [5.3-5.4 Notes + Actions](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/5.3-5.4)
+- [Week 1 Technicals](https://dtsivkovski.github.io/dtsivkovski-cspt3/dsProject)
+- [Populated Create Task Page](https://dtsivkovski.github.io/dtsivkovski-cspt3/createtask)
 
 #### Week 0 - [[Review Ticket]](https://github.com/dtsivkovski/dtsivkovski-cspt3/issues/1)
-- [TT0 - Python Menu](https://replit.com/@DanielTsivkovsk/dtsivkovski-cspt3#.replit) 
+- [TT0 - Python Menu](https://dtsivkovski.github.io/dtsivkovski-cspt3/dsProject) 
 - [5.1-5.2 Notes + Actions](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/5.1-5.2)
    
