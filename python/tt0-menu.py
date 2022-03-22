@@ -12,11 +12,11 @@
 # from wipy import funcy
 # from wipy import prefuncy
 # Week 0 Imports
-import ageswap, matrix, pattern
+from week0 import ageswap, matrix, pattern
 import os
 # Week 1 imports
-import math_functions
-import lists_loops
+from week1 import math_functions, lists_loops
+# Create Task
 import createtask
 
 
