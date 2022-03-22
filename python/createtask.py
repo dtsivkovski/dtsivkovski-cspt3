@@ -10,7 +10,7 @@ def price_adder(value):
   global subtotal
   subtotal = subtotal + value
   print('-' * 45)
-  print("Your subtotal is: ", subtotal)
+  print("Your subtotal is: $" + str(subtotal))
 
 def final_total(subtotal):
   print("=" * 45)
@@ -21,6 +21,8 @@ def final_total(subtotal):
   else:
     total = subtotal
   # Formatting and printing the total
+  print("-" * 45)
+  print("Your subtotal is: $" + str(subtotal))
   print("-" * 45)
   print("Your final total is: $" + str(total))
   print("=" * 45)
