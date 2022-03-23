@@ -25,7 +25,7 @@ class Factorial:
         else:
             # print(n)
             self.factorial.append(n)
-            return n * self.__call__(n-1)
+            return n * self(n-1)
     
     def printseq(self):
         print("-"*45, "\nSequence: \n", *self.factorial)
