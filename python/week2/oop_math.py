@@ -31,6 +31,7 @@ class Factorial:
         print("-"*45, "\nSequence: \n", *self.factorial)
 
 class LCM:
+    # Only needs a call, no init because no defined properties
     def __call__(self, a, b):
         if (a > b):
             maximum = a
@@ -44,13 +45,20 @@ class LCM:
 
 
 def lcm_run():
+    # Tester 1
     a = 9227 # int(input("Input your first value: "))
     b = 377 # int(input("Input your second value: "))
     lcm = LCM()
     result = lcm(a,b)
     print("-"*45, "\nThe least common multiple of", a, "and", b, "is", result)
+    # Tester 2
+    a = 10
+    b = 8
+    result = lcm(a,b)
+    print("-"*45, "\nThe least common multiple of", a, "and", b, "is", result)
 
 def factorial_run():
+    # tester 1
     n = 9 # int(input("Input a number for your factorial: "))
     facto = Factorial()
     result = facto(n)
@@ -58,6 +66,7 @@ def factorial_run():
 
 
 def fib_run():
+    # Tester 1
     n = 9 # int(input("Input a number for your fibonacci: "))
     fibo_of = Fibonacci() # object instantiation and run __init__ method
     result = fibo_of(n)

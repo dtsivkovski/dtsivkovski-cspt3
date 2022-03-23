@@ -17,7 +17,7 @@ import os
 # Week 1 imports
 from week1 import math_functions, lists_loops
 # Week 2 imports
-from week2 import oop_math
+from week2 import oop_math, oop_palindrome
 # Create Task
 import createtask
 
@@ -40,15 +40,19 @@ visual_sub_menu = [
 ]
 
 math_sub_menu = [
+    ["Age Swap", ageswap.ageswap_run],
     ["Fibonacci", math_functions.fibonacci_tester],
     ["Recursive Fibonacci", math_functions.recur_fibonacci_tester],
     ["Recursive Factorial", math_functions.factorial_tester],
-    ["OOP Fibonacci", oop_math.fib_run],
-    ["OOP Factorial", oop_math.factorial_run],
-    ["Age Swap", ageswap.ageswap_run],
-    
-  
 ]
+
+oop_sub_menu = [
+  ["OOP Fibonacci", oop_math.fib_run],
+  ["OOP Factorial", oop_math.factorial_run],
+  ["OOP Least Common Multiple", oop_math.lcm_run],
+  ['\u001b[32;1m[EXTRA CREDIT]\u001b[37;1m OOP Palindrome', oop_palindrome.pali_tester]
+]
+
 data_sub_menu = [
     ["For Loop", lists_loops.for_loop],
     ["While Loop", lists_loops.while_loop_run],
@@ -76,11 +80,17 @@ def visual_submenu():
 
 def math_submenu():
     title = f"{border}\n" + "Math Submenu" + banner
-    buildMenu(title, math_sub_menu)
+    math_menu = math_sub_menu.copy()
+    math_menu.append(["OOP Submenu", oop_submenu])
+    buildMenu(title, math_menu)
 
 def data_submenu():
     title = f"{border}\n" + "Data Submenu" + banner
     buildMenu(title, data_sub_menu)
+  
+def oop_submenu():
+  title = f"{border}\n" + "OOP Function Submenu" + banner
+  buildMenu(title, oop_sub_menu)
 
 def buildMenu(banner, options):
     # header for menu
