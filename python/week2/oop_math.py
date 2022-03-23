@@ -12,7 +12,7 @@ class Fibonacci:
         return self.fiboSeq[n]
     
     def printseq(self):
-        print("Sequence: \n", *self.fiboSeq)
+        print("-"*45, "\nSequence: \n", *self.fiboSeq)
 
 class Factorial:
     def __init__(self):
@@ -28,24 +28,44 @@ class Factorial:
             return n * self.__call__(n-1)
     
     def printseq(self):
-        print("Sequence: \n", *self.factorial)
+        print("-"*45, "\nSequence: \n", *self.factorial)
 
+class LCM:
+    def __call__(self, a, b):
+        if (a > b):
+            maximum = a
+        else:
+            maximum = b
+        while (True):
+            if (maximum % a == 0 and maximum % b == 0):
+                break
+            maximum = maximum + 1
+        return maximum
+
+
+def lcm_run():
+    a = 9227 # int(input("Input your first value: "))
+    b = 377 # int(input("Input your second value: "))
+    lcm = LCM()
+    result = lcm(a,b)
+    print("-"*45, "\nThe least common multiple of", a, "and", b, "is", result)
 
 def factorial_run():
-    n = int(input("Input a number for your factorial: "))
+    n = 9 # int(input("Input a number for your factorial: "))
     facto = Factorial()
     result = facto(n)
-    print("The factorial of", n, "is", result)
+    print("-"*45, "\nThe factorial of", n, "is", result)
 
 
 def fib_run():
-    n = int(input("Input a number for your fibonacci: "))
+    n = 9 # int(input("Input a number for your fibonacci: "))
     fibo_of = Fibonacci() # object instantiation and run __init__ method
     result = fibo_of(n)
     fibo_of.printseq()
-    print("The final result is: ", result) # object running __call__ method
+    print("-"*45, "\nThe final result is: ", result) # object running __call__ method
     
 
 if __name__ == "__main__":
     factorial_run()
     fib_run()
+    lcm_run()
