@@ -62,7 +62,7 @@ def fib_run():
     fibo_of = Fibonacci() # object instantiation and run __init__ method
     result = fibo_of(n)
     fibo_of.printseq()
-    print("-"*45, "\nThe final result is: ", result) # object running __call__ method
+    print("-"*45, "\nThe fibonacci of", n ,"is", result) # object running __call__ method
     
 
 if __name__ == "__main__":
