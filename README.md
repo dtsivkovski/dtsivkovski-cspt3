@@ -17,6 +17,10 @@
 
 ## Timebox (Newest First)
 
+#### Week 2 - [[Review Ticket]](https://github.com/dtsivkovski/dtsivkovski-cspt3/issues/3)
+- [5.5-5.6 Notes + Actions](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/5.5-5.6)
+- [Week 2 Technicals](https://dtsivkovski.github.io/dtsivkovski-cspt3/dsProject)
+
 #### Week 1 - [[Review Ticket]](https://github.com/dtsivkovski/dtsivkovski-cspt3/issues/2)
 - [5.3-5.4 Notes + Actions](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/5.3-5.4)
 - [Week 1 Technicals](https://dtsivkovski.github.io/dtsivkovski-cspt3/dsProject)
