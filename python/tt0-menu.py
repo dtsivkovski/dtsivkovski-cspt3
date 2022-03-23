@@ -16,6 +16,8 @@ from week0 import ageswap, matrix, pattern
 import os
 # Week 1 imports
 from week1 import math_functions, lists_loops
+# Week 2 imports
+from week2 import oop_math
 # Create Task
 import createtask
 
@@ -28,34 +30,30 @@ import createtask
 main_menu = [
     # ["Age Swap", ageswap.ageswap_run],
     # ["Matrix", matrix.matrix_tester],
-    ['Create Task', createtask.shop_menu]
+    ['Create Task', createtask.shop_menu],
 ]
 
-# Week 0 Items
-week0_menu = [
-    ["Age Swap", ageswap.ageswap_run],
-    ["Matrix", matrix.matrix_tester],
-]
-patterns_sub_menu = [
+visual_sub_menu = [
     ["Animated Pattern", pattern.patternfunc],
     ["Static Pattern", pattern.staticpattern],
+    ["Matrix", matrix.matrix_tester],
 ]
 
-# Week 1 Items
-week1_menu = [
-    # ["Age Swap", ageswap.ageswap_run],
-    # ["Matrix", matrix.matrix_tester],
-]
 math_sub_menu = [
     ["Fibonacci", math_functions.fibonacci_tester],
     ["Recursive Fibonacci", math_functions.recur_fibonacci_tester],
-    ["Recursive Factorial", math_functions.factorial_tester]
+    ["Recursive Factorial", math_functions.factorial_tester],
+    ["OOP Fibonacci", oop_math.fib_run],
+    ["OOP Factorial", oop_math.factorial_run],
+    ["Age Swap", ageswap.ageswap_run],
+    
+  
 ]
-loops_sub_menu = [
+data_sub_menu = [
     ["For Loop", lists_loops.for_loop],
     ["While Loop", lists_loops.while_loop_run],
     ["Recursive Loop", lists_loops.recursive_loop_run],
-    ["List Search", lists_loops.list_finder]
+    ["List Search", lists_loops.list_finder],
 ]
 
 # Menu banner and formatted borders
@@ -67,39 +65,22 @@ banner = f"\n{thinborder}\nPlease Select An Option\n{border}"
 def menu():
     title = f"{border}\n" + "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Week 0", week0_submenu])
-    menu_list.append(["Week 1", week1_submenu])
-    # menu_list.append(["Math Functions", math_submenu])
-    # menu_list.append(["Lists/Loops", loops_submenu])
+    menu_list.append(["Visual", visual_submenu])
+    menu_list.append(["Math", math_submenu])
+    menu_list.append(["Data", data_submenu])
     buildMenu(title, menu_list)
 
-# Submenu for week0 tasks
-def week0_submenu():
-  title = f"{border}\n" + "Week 1 Submenu" + banner
-  menu_list = week0_menu.copy()
-  menu_list.append(["Pattern", patterns_submenu])
-  buildMenu(title, menu_list)
-
-# Week 1 Submenu
-def week1_submenu():
-  title = f"{border}\n" + "Week 1 Submenu" + banner
-  menu_list = week1_menu.copy()
-  menu_list.append(["Math Functions", math_submenu])
-  menu_list.append(["Lists/Loops", loops_submenu])
-  buildMenu(title, menu_list)
-  
-
-def patterns_submenu():
+def visual_submenu():
     title = f"{border}\n" + "Patterns Submenu" + banner
-    buildMenu(title, patterns_sub_menu)
+    buildMenu(title, visual_sub_menu)
 
 def math_submenu():
     title = f"{border}\n" + "Math Submenu" + banner
     buildMenu(title, math_sub_menu)
 
-def loops_submenu():
-    title = f"{border}\n" + "Lists/Loops Submenu" + banner
-    buildMenu(title, loops_sub_menu)
+def data_submenu():
+    title = f"{border}\n" + "Data Submenu" + banner
+    buildMenu(title, data_sub_menu)
 
 def buildMenu(banner, options):
     # header for menu

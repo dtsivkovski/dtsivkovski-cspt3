@@ -1,4 +1,3 @@
-
 class Fibonacci:
     def __init__(self):
         self.fiboSeq = [0, 1]
