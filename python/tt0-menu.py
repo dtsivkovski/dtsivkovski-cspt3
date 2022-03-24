@@ -53,7 +53,7 @@ oop_sub_menu = [
   ["OOP Factorial", oop_math.factorial_run],
   ["OOP Least Common Multiple", oop_math.lcm_run],
   ['\u001b[32;1m[EXTRA CREDIT]\u001b[37;1m OOP Palindrome', oop_palindrome.pali_tester],
-  ['\u001b[31;1m[OTHER]\u001b[37;1m OOP Palindrome', multiplication.multiplytester]
+  ['\u001b[31;1m[OTHER]\u001b[37;1m Multiplication Table', multiplication.multiplytester]
 ]
 
 data_sub_menu = [

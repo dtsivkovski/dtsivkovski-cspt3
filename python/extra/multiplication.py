@@ -1,6 +1,3 @@
-from tkinter.simpledialog import askstring
-
-
 class multiply: 
     def __init__(self):
         self.col1 = []
@@ -45,12 +42,13 @@ class multiply:
             print("=" * 20)
 
 
-def multiplytester(n):
+def multiplytester():
     function = multiply()
-    function(n)
+    function(int(input("Input a value 10-99: ")))
 
 
 if __name__ == "__main__":
-    multiplytester(18)
-    multiplytester(87)
-    multiplytester(99)
+    #multiplytester(18)
+    #multiplytester(87)
+    #multiplytester(99)
+    multiplytester()
