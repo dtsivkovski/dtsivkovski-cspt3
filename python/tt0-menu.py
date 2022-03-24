@@ -18,6 +18,8 @@ import os
 from week1 import math_functions, lists_loops
 # Week 2 imports
 from week2 import oop_math, oop_palindrome
+# Extra import
+from extra import multiplication
 # Create Task
 import createtask
 
@@ -50,7 +52,8 @@ oop_sub_menu = [
   ["OOP Fibonacci", oop_math.fib_run],
   ["OOP Factorial", oop_math.factorial_run],
   ["OOP Least Common Multiple", oop_math.lcm_run],
-  ['\u001b[32;1m[EXTRA CREDIT]\u001b[37;1m OOP Palindrome', oop_palindrome.pali_tester]
+  ['\u001b[32;1m[EXTRA CREDIT]\u001b[37;1m OOP Palindrome', oop_palindrome.pali_tester],
+  ['\u001b[31;1m[OTHER]\u001b[37;1m OOP Palindrome', multiplication.multiplytester]
 ]
 
 data_sub_menu = [
