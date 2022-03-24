@@ -73,7 +73,8 @@ def menu():
     title = f"{border}\n" + "Function Menu" + banner
     menu_list = main_menu.copy()
     menu_list.append(["Visual", visual_submenu])
-    menu_list.append(["Math", math_submenu])
+    menu_list.append(["Imperative Math", math_submenu])
+    menu_list.append(["OOP Math", oop_submenu])
     menu_list.append(["Data", data_submenu])
     buildMenu(title, menu_list)
 
@@ -83,8 +84,8 @@ def visual_submenu():
 
 def math_submenu():
     title = f"{border}\n" + "Math Submenu" + banner
-    math_menu = math_sub_menu.copy()
-    math_menu.append(["OOP Submenu", oop_submenu])
+    # math_menu = math_sub_menu.copy()
+    # math_menu.append(["OOP Submenu", oop_submenu])
     buildMenu(title, math_menu)
 
 def data_submenu():
