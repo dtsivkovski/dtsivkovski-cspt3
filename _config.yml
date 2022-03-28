@@ -1,1 +1,32 @@
 remote_theme: daattali/beautiful-jekyll@5.0.0
+
+title: Github Pages - Daniel Tsivkovski
+
+author: Daniel Tsivkovski
+
+# --- List of links in the navigation bar --- #
+
+navbar-links:
+  Home: "/"
+  Data Structures Project: "https://dtsivkovski.github.io/dtsivkovski-cspt3/dsProject"
+  Test Prep / Notes: "https://dtsivkovski.github.io/dtsivkovski-cspt3/testPrep"
+  Create Task: "https://dtsivkovski.github.io/dtsivkovski-cspt3/createtask"
+  
+github: dtsivkovski
+  
+avatar: "https://avatars.githubusercontent.com/u/89223402?v=4"
+
+round-avatar: true
+
+# Colors
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
