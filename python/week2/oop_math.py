@@ -15,9 +15,11 @@ class Fibonacci:
         print("-"*45, "\nSequence: \n", *self.fiboSeq)
 
 class Factorial:
+    # init creates a factorial sequence list
     def __init__(self):
         self.factorial = []
 
+    # factorial function to find the last value and append all previous ones
     def __call__(self,n):
         if n == 1 or n == 0:
             self.printseq()
@@ -26,7 +28,8 @@ class Factorial:
             # print(n)
             self.factorial.append(n)
             return n * self(n-1)
-    
+
+    # print sequence function for factorial
     def printseq(self):
         print("-"*45, "\nSequence: \n", *self.factorial)
 

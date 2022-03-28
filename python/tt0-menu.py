@@ -17,7 +17,7 @@ import os
 # Week 1 imports
 from week1 import math_functions, lists_loops
 # Week 2 imports
-from week2 import oop_math, oop_palindrome
+from week2 import oop_math, oop_palindrome, imp_lcm
 # Extra import
 from extra import multiplication
 # Create Task
@@ -46,6 +46,7 @@ math_sub_menu = [
     ["Fibonacci", math_functions.fibonacci_tester],
     ["Recursive Fibonacci", math_functions.recur_fibonacci_tester],
     ["Recursive Factorial", math_functions.factorial_tester],
+    ["Least Common Multiple", imp_lcm.lcm_run]
 ]
 
 oop_sub_menu = [
@@ -86,7 +87,7 @@ def math_submenu():
     title = f"{border}\n" + "Math Submenu" + banner
     # math_menu = math_sub_menu.copy()
     # math_menu.append(["OOP Submenu", oop_submenu])
-    buildMenu(title, math_menu)
+    buildMenu(title, math_sub_menu)
 
 def data_submenu():
     title = f"{border}\n" + "Data Submenu" + banner
