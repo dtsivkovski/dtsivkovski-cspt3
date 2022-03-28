@@ -19,12 +19,12 @@ github: dtsivkovski
 # round-avatar: true
 
 # Colors
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
+navbar-col: "#087E8B"
+navbar-text-col: "#3C3C3C"
+navbar-border-col: "#087E8B"
+page-col: "#3C3C3C"
+text-col: "#F5F5F5"
+link-col: "#087E8B"
 hover-col: "#0085A1"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
