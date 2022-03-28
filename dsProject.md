@@ -11,6 +11,100 @@
 
 ### Code Snippets
 
+### Week 2
+
+Extra Credit - OOP Palindrome
+```python
+class Palindrome:
+  def __init__(self):
+        self.filtered = ""
+        self.paliBool = True
+
+  def __call__(self, n):
+    self.filtered = ""
+    self.paliBool = True
+    # Filters the string for letters only and appends them to the filtered string
+    for i in n:
+      if i.isalpha():
+        self.filtered += i
+    # For loop for palindrome finding
+    
+    print("="*45, "\nString: ", n,"\n" , '-'*44)
+    for i in range(0, int(len(self.filtered)/2)):
+      
+      # Sets a to the lowercase of the letter that is i position in the string
+      a = self.filtered[i].lower()
+      # Sets b to the lowercase of the letter that is i amount starting from the end of the string
+      b = self.filtered[(len(self.filtered) - i - 1)].lower()
+      if a != b:
+        # Breakpoint if the letters do not match to state it is not a palindrome
+        self.paliBool = False
+        print("'" + n + "'", "is not a palindrome at position " + str(i) +  " because", a, "!=", b)
+        break
+    # Print statement if the word is a palindrome (boolean stayed true)
+    if self.paliBool:
+      print("'" + n + "'", "is a palindrome!")
+```
+
+OOP Factorial
+```python
+class Factorial:
+    # init creates a factorial sequence list
+    def __init__(self):
+        self.factorial = []
+
+    # factorial function to find the last value and append all previous ones
+    def __call__(self,n):
+        if n == 1 or n == 0:
+            self.printseq()
+            return 1
+        else:
+            # print(n)
+            self.factorial.append(n)
+            return n * self(n-1)
+
+    # print sequence function for factorial
+    def printseq(self):
+        print("-"*45, "\nSequence: \n", *self.factorial)
+```
+
+OOP LCM
+```python
+class LCM:
+    # Only needs a call, no init because no defined properties
+    def __call__(self, a, b):
+        if (a > b):
+            maximum = a
+        else:
+            maximum = b
+        while (True):
+            if (maximum % a == 0 and maximum % b == 0):
+                break
+            maximum = maximum + 1
+        return maximum
+
+def lcm_run():
+    # Tester 1
+    a = 9227 # int(input("Input your first value: "))
+    b = 377 # int(input("Input your second value: "))
+    lcm = LCM()
+    result = lcm(a,b)
+```
+
+Imperative LCM
+```python
+def lcm(a,b):
+  if (a > b):
+      maximum = a
+  else:
+      maximum = b
+  while (True):
+      if (maximum % a == 0 and maximum % b == 0):
+          break
+      maximum = maximum + 1
+  return maximum
+```
+
 ### Week 1
 
 InfoDb Lists
