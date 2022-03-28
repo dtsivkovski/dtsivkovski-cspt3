@@ -1,6 +1,6 @@
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/89223402/157379234-9fe32df4-8000-4f0b-88aa-4c279c25001e.gif)
 
-<table>
+<!-- <table>
     <tr>
         <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/">Main</a></td>
         <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/dsProject">Data Structures Project</a></td>
@@ -8,7 +8,7 @@
         <td><a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/createtask">Create Task</a></td>
     </tr>
 </table>
-<hr>
+<hr> -->
 
 # Daniel Tsivkovski's Github Page
 
