@@ -1,5 +1,5 @@
-<p style="font-size: 30px; text-align: center">Search for pages</p>
-<input autocomplete="off" style="margin-left: 30%; margin-right: 30%; font-size: 17.5px; height: 25px; width: 40%" type="text" id="SearchInput" onkeyup="SearchMain(list = websitePages, textcolor = '#c7ffd6', nullcolor = '#e30202', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false)" placeholder="Search for pages" title="Search for pages">
+## Search For Pages
+<input autocomplete="off" style="margin-left: 30%; margin-right: 30%; font-size: 17.5px; height: 25px; width: 40%" type="text" id="SearchInput" onkeyup="SearchMain(list = websitePages, textcolor = 'blue', nullcolor = '#e30202', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false)" placeholder="Search for pages" title="Search for pages">
 <br>
 <p style="text-align: center" id="SearchResult"></p>
 <script>
@@ -9,13 +9,13 @@
         // the path is used to create a link to the desired page
         let websitePages =
             [
-                {"name":"Test Prep", "path":"https://jakubponulak.github.io/DataStructures/study"},
-                {"name":"Project Documentation", "path":"https://jakubponulak.github.io/DataStructures/project_doc"},
-                {"name":"Create Task Documentation", "path":"https://jakubponulak.github.io/DataStructures/ct_doc"},
-                {"name":"Home", "path":"https://jakubponulak.github.io/DataStructures/DataStructures/"},
+                {"name":"Test Prep / Notes", "path":"https://dtsivkovski.github.io/dtsivkovski-cspt3/testPrep"},
+                {"name":"Data Structures Project", "path":"https://dtsivkovski.github.io/dtsivkovski-cspt3/dsProject"},
+                {"name":"Create Task", "path":"https://dtsivkovski.github.io/dtsivkovski-cspt3/createtask"},
+                {"name":"Home", "path":"https://dtsivkovski.github.io/dtsivkovski-cspt3/"},
                 {"name":"Guython", "path":"https://akhilnandhakumar.github.io/Guython/"},
-                {"name":"Personal GitHub Repository", "path":"https://github.com/JakubPonulak/DataStructures"},
-                {"name":"Team GitHub Repository", "path":"https://github.com/AkhilNandhakumar/Guython"},
+                {"name":"Individual GitHub Repository", "path":"https://github.com/dtsivkovski/dtsivkovski-cspt3"},
+                {"name":"Team GitHub Repository", "path":"https://github.com/LindaLiu1202/just_here_to_code/"},
                 {"name":"Replit Project", "path":"https://replit.com/@JakubPonulak/DataStructures"},
             ] ;
 
