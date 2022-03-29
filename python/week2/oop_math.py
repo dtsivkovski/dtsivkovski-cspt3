@@ -77,13 +77,16 @@ def fib_run():
     print("-"*45, "\nThe fibonacci of", n ,"is", result) # object running __call__ method
     
 class Consec_Nums:
+  # init defines num which is input for user
   def __init__(self, num):
     self.num = num
   def __call__(self):
+    # since 0 is the first number, there are no numbers before it, so there is no sequnetial sum
     if self.num <= 0:
       print("No sequencial sum for this number")
     else:
       n = 0
+      # for loop ends with the length of input + 1, because length starts at 0 while range starts at 1 (so the max number needs to be increased by one)
       for i in range (1, int(self.num) + 1):
         n = n + i
       print("The sum of all the numbers from 1 to", self.num, "is", n)
@@ -92,7 +95,7 @@ class Consec_Nums:
 def consec_print():
   inp = int(input("Enter a number you want to find the sequential sum of: "))
   func = Consec_Nums(inp)
-  func()
+  func() # uses call function from class
 
 if __name__ == "__main__":
     factorial_run()
