@@ -76,8 +76,26 @@ def fib_run():
     fibo_of.printseq()
     print("-"*45, "\nThe fibonacci of", n ,"is", result) # object running __call__ method
     
+class Consec_Nums:
+  def __init__(self, num):
+    self.num = num
+  def __call__(self):
+    if self.num <= 0:
+      print("No sequencial sum for this number")
+    else:
+      n = 0
+      for i in range (1, int(self.num) + 1):
+        n = n + i
+      print("The sum of all the numbers from 1 to", self.num, "is", n)
+
+# allows users to put input into sequential sum instead of using tester
+def consec_print():
+  inp = int(input("Enter a number you want to find the sequential sum of: "))
+  func = Consec_Nums(inp)
+  func()
 
 if __name__ == "__main__":
     factorial_run()
     fib_run()
     lcm_run()
+    consec_print()
