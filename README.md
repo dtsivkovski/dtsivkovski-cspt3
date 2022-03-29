@@ -16,7 +16,7 @@
                 {"name":"Guython", "path":"https://akhilnandhakumar.github.io/Guython/"},
                 {"name":"Individual GitHub Repository", "path":"https://github.com/dtsivkovski/dtsivkovski-cspt3"},
                 {"name":"Team GitHub Repository", "path":"https://github.com/LindaLiu1202/just_here_to_code/"},
-                {"name":"Replit Project", "path":"https://replit.com/@JakubPonulak/DataStructures"},
+                {"name":"Replit Project", "path":"https://replit.com/@DanielTsivkovsk/dtsivkovski-cspt3#python/tt0-menu.py"},
             ] ;
 
         function SearchMain(list = websitePages, textcolor = 'white',nullcolor = 'red', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false, NoRText = 'No Results') {
