@@ -32,7 +32,7 @@ import createtask
 main_menu = [
     # ["Age Swap", ageswap.ageswap_run],
     # ["Matrix", matrix.matrix_tester],
-    ['Create Task', createtask.shop_menu],
+    ['\u001b[31;1mCreate Task\u001b[37;1m', createtask.shop_menu],
 ]
 
 visual_sub_menu = [
@@ -54,7 +54,8 @@ oop_sub_menu = [
   ["OOP Factorial", oop_math.factorial_run],
   ["OOP Least Common Multiple", oop_math.lcm_run],
   ['\u001b[32;1m[EXTRA CREDIT]\u001b[37;1m OOP Palindrome', oop_palindrome.pali_tester],
-  ['\u001b[31;1m[OTHER]\u001b[37;1m Multiplication Table', multiplication.multiplytester]
+  ['\u001b[31;1m[OTHER]\u001b[37;1m Multiplication Table', multiplication.multiplytester],
+  ['\u001b[34;1m[CREATED BY JAKUB P]\u001b[37;1m Sequential Sum', oop_math.consec_print]
 ]
 
 data_sub_menu = [
@@ -73,10 +74,10 @@ banner = f"\n{thinborder}\nPlease Select An Option\n{border}"
 def menu():
     title = f"{border}\n" + "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Visual", visual_submenu])
-    menu_list.append(["Imperative Math", math_submenu])
-    menu_list.append(["OOP Math", oop_submenu])
-    menu_list.append(["Data", data_submenu])
+    menu_list.append(["\u001b[33;1mVisual\u001b[37;1m", visual_submenu])
+    menu_list.append(["\u001b[32;1mImperative Math\u001b[37;1m", math_submenu])
+    menu_list.append(["\u001b[34;1mOOP Math\u001b[37;1m", oop_submenu])
+    menu_list.append(["\u001b[35;1mData\u001b[37;1m", data_submenu])
     buildMenu(title, menu_list)
 
 def visual_submenu():
