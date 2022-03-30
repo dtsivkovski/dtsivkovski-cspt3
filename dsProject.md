@@ -1,5 +1,8 @@
 {% include navbar.html %}
 
+{% include style.html %}
+
+
 # Data Structures Project
 
 
