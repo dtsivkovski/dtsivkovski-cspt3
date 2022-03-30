@@ -1,7 +1,7 @@
 {% include style.html %}
 
 <h2 style='text-align: center'>Search for Pages</h2>
-<input autocomplete="off" style="margin-left: 30%; margin-right: 30%; font-size: 17.5px; height: 25px; width: 40%" type="text" id="SearchInput" onkeyup="SearchMain(list = websitePages, textcolor = 'blue', nullcolor = '#e30202', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false)" placeholder="Search for pages" title="Search for pages">
+<input autocomplete="off" style="margin-left: 30%; margin-right: 30%; font-size: 17.5px; height: 25px; width: 40%" type="text" id="SearchInput" onkeyup="SearchMain(list = websitePages, textcolor = '#403cba', nullcolor = '#e30202', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false)" placeholder="Search for pages" title="Search for pages">
 <br>
 <p style="text-align: center" id="SearchResult"></p>
 <script>
@@ -21,7 +21,7 @@
                 {"name":"Replit Project", "path":"https://replit.com/@DanielTsivkovsk/dtsivkovski-cspt3#python/tt0-menu.py"},
             ] ;
 
-        function SearchMain(list = websitePages, textcolor = 'white',nullcolor = 'red', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false, NoRText = 'No Results') {
+        function SearchMain(list = websitePages, textcolor = 'white', nullcolor = 'red', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false, NoRText = 'No Results') {
             let input = document.getElementById(SearchID);
             let filter = input.value.toUpperCase(); // the user's input is changed to uppercase so that the search is not case-sensitive
             document.getElementById(ResultID).innerHTML = '| ' // this line makes the output blank whenever the function is called so that previous information is removed
