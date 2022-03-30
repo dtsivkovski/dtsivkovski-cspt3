@@ -1,8 +1,4 @@
 {% include style.html %}
-<head>
-        <title>Home Page</title>
-        <link rel="icon" type="image/x-icon" href="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png">
-</head>
 <h2 style='text-align: center'>Search for Pages</h2>
 <input autocomplete="off" style="margin-left: 30%; margin-right: 30%; font-size: 17.5px; height: 25px; width: 40%" type="text" id="SearchInput" onkeyup="SearchMain(list = websitePages, textcolor = 'white', nullcolor = '#e30202', SearchID = 'SearchInput', ResultID = 'SearchResult', DebugMode = false)" placeholder="Search for pages" title="Search for pages">
 <br>
