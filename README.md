@@ -21,7 +21,7 @@
 
 ## Timebox (Newest First)
 
-#### Week 3 - [[Review Ticket]](https://github.com/JakubPonulak/DataStructures/issues/1)
+#### Week 3 - [[Review Ticket]](https://github.com/dtsivkovski/dtsivkovski-cspt3/issues/4)
 - [Algorithmic Final Video](jacksongolding.com)
 
 #### Week 2 - [[Review Ticket]](https://github.com/dtsivkovski/dtsivkovski-cspt3/issues/3)
