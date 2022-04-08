@@ -13,7 +13,99 @@ Select "1" in this menu to view the create task.
 
 {% include repl_embed.html %}
 
-### Code Snippets
+### Create Task Written Response
+
+- 3a.i : The overall purpose of the program is to take multiple inputs from a user with the items that the user wants, and then use it to calculate the total of those items. Then the user will receive a 20% discount if the value of the items is above $60. The program will display both the original total and then the discounted total if the discount is applicable.
+
+- 3a.ii : The video demonstrates the program being able to take user inputs to take and use the value of each item to calculate what the total would be. Finally, the video shows what happens when the total matches the criteria for a discount, which it then applies if that is the case.
+
+- 3a.iii : The video demonstrates the user input, which is a user inputting different numbers to select the items they want through a menu, in any order and combination. The video then demonstrates the output, which includes the subtotal, a discount message (if a discount is applicable), and then the final total.
+
+- 3b.i : Data storage in list:
+
+```python
+price_list = [
+  ["Shoes", 55, 'price_adder(55)'],
+  ["Socks", 5, 'price_adder(5)'],
+  ["T-Shirt", 10, 'price_adder(10)'],
+  ["Jacket", 30, 'price_adder(30)'],
+  ["Hat", 8, 'price_adder(8)']
+]
+```
+
+- 3b.ii: Data in the list being used:
+
+```python
+ # Creates a dictionary with all menu options
+  for item in price_list:
+    index = len(prompts)
+    prompts[index] = item
+
+  # Prints each option in the menu
+  for a, b in prompts.items():
+    print(a, '---', b[0], "- $" + str(b[1]))
+```
+
+- 3b.iii: The name of the list in this response is dict, as it is a javascript dictionary with key-value pairs.
+- 3b.iv: The data contained in this list represent the names and prices of each type of tea available for user input. The “key” is the name of the tea, while the “value” is the price of the tea. This is then used to calculate the price of each item that the user inputs
+- 3b.v: The data in this dictionary is essential for calculating the price of each individual item, as well as calculating the total cost of all the items that the user has inputted. Without this dictionary, the program would be unable to function, as the program would be unable to calculate the price of each item and would therefore be unable to display any total to the user. If this list did not exist, the most likely way for the user to calculate their total price would be to manually input the price of each item that they have, which would likely be more inconvenient as it would require more work for the user. 
+
+- 3c.i : findvalue procedure
+
+```
+// Creating a function to find the value of a term
+        function findvalue(i) {
+            //Sets the indexed strings from the array within a variable
+            j = itemArray[i];
+ 
+            //Creates bottom table for all items added from input bar
+            var jdiv = document.createElement("div");
+            jdiv.className = "row";
+            jdiv.innerHTML = j + " - $" + dict[j];
+            outputdiv.appendChild(jdiv);
+ 
+            //Calls the dictionary and adds the values of each item from the dictionary to the total variable
+            total += dict[j];
+        };
+```
+
+- 3c.ii : usage of the findvalue procedure
+
+```
+//for loop iterating for the length of the itemArray, or how many items are added from the input
+        for (var i = 0; i < itemArray.length; i++) {
+            findvalue(i);
+        }
+```
+
+- 3c.iii : The findvalue procedure takes the input, “i”, which is the position value of one of the items that the user inputs. Then the procedure finds the value of the item from the pre-defined dictionary. Finally, the procedure outputs the price of the individual item and adds that value to the total cost.
+- 3c.iv: First, the procedure finds the item in the itemArray that the position indicator “i” indicates. Then the procedure creates a new div for the html output for the user, makes it a “row” class for formatting. The program then outputs the name of the item itself, which is just “j”, and then outputs the price of the item, which is “dict[j]”, which references the pre-defined dictionary using the key, which is the item name. Finally, this is appended to the output div to be displayed to the user. Then the price of the item is added to the total using “total += dict[j]”, which will eventually be displayed later once all of the items are calculated with this procedure
+- 
+- 3d.i : 
+
+First Call (first iteration of):
+```
+for (var i = 0; i < itemArray.length; i++) {
+            findvalue(i);
+        }
+```
+_Where i is 0_
+
+Second Call (second iteration of):
+```
+for (var i = 0; i < itemArray.length; i++) {
+            findvalue(i);
+        }
+```
+_Where i is 1_
+
+- 3d.ii : In the first call, the conditions tested is the findvalue of “0”, which will find the value of the 0 (or first) term in the itemarray that was created based on the user’s input. In the second call, the condition tested is the findvalue of “1”, which will find the value of the 1 (or second) term in the itemarray from the user input.
+
+- 3d.iii : Although the conditions of the first call as well as the number of calls to the procedure can vary based on user input, an example can be provided of the output. For example, if the first item in the user’s list is “Fu Shou Shan,” the procedure will take the first item in the list, find it’s name, and try to find the value of it in the dictionary, which is $39.00. For the second call, if the second item in the list is “Xin Gong Yi,” the procedure will find the second item, take the name of it, and find its value from the dictionary, which would be $21.00. 
+
+
+
+<!-- ### Code Snippets
 
 List
 ```python
@@ -81,3 +173,4 @@ def final_total(subtotal):
   # Terminating the environment after calculating total
   sys.exit()
 ```
+ -->
