@@ -46,36 +46,45 @@ price_list = [
     print(a, '---', b[0], "- $" + str(b[1]))
 ```
 
-- 3b.iii: The name of the list in this response is dict, as it is a javascript dictionary with key-value pairs.
-- 3b.iv: The data contained in this list represent the names and prices of each type of tea available for user input. The “key” is the name of the tea, while the “value” is the price of the tea. This is then used to calculate the price of each item that the user inputs
-- 3b.v: The data in this dictionary is essential for calculating the price of each individual item, as well as calculating the total cost of all the items that the user has inputted. Without this dictionary, the program would be unable to function, as the program would be unable to calculate the price of each item and would therefore be unable to display any total to the user. If this list did not exist, the most likely way for the user to calculate their total price would be to manually input the price of each item that they have, which would likely be more inconvenient as it would require more work for the user. 
+- 3b.iii: The name of the list in this response is price_list, and it is a python two-dimensional list.
+- 3b.iv: The data contained in this list represent the names, prices, and function input of each item in the shop available for user input. The function input corresponds to the function that would be executed with a preset parameter.
+- 3b.v: The data in this dictionary is essential for calculating the total cost of all the items that the user has inputted. Without this dictionary, the program would be unable to function, and it would output a total of $0 every time. If this list did not exist, the most likely way for the user to calculate their total price would be to manually input the price of each item that they have, which would likely be more inconvenient as it would require more work for the user. 
 
-- 3c.i : findvalue procedure
+- 3c.i : priceadder procedure
 
-```
-// Creating a function to find the value of a term
-        function findvalue(i) {
-            //Sets the indexed strings from the array within a variable
-            j = itemArray[i];
- 
-            //Creates bottom table for all items added from input bar
-            var jdiv = document.createElement("div");
-            jdiv.className = "row";
-            jdiv.innerHTML = j + " - $" + dict[j];
-            outputdiv.appendChild(jdiv);
- 
-            //Calls the dictionary and adds the values of each item from the dictionary to the total variable
-            total += dict[j];
-        };
+```python
+# Adds the item's price to the subtotal
+def price_adder(value):
+  global subtotal
+  subtotal = subtotal + value
+  print('-' * 45)
+  print("Your subtotal is: $" + str(subtotal))
 ```
 
-- 3c.ii : usage of the findvalue procedure
+- 3c.ii : usage of the priceadder procedure
 
+Preset parameters for each item.
+```python
+price_list = [
+  ["Shoes", 55, 'price_adder(55)'],
+  ["Socks", 5, 'price_adder(5)'],
+  ["T-Shirt", 10, 'price_adder(10)'],
+  ["Jacket", 30, 'price_adder(30)'],
+  ["Hat", 8, 'price_adder(8)']
+]
 ```
-//for loop iterating for the length of the itemArray, or how many items are added from the input
-        for (var i = 0; i < itemArray.length; i++) {
-            findvalue(i);
-        }
+AND using the correct parameter based on user input
+```python
+user_choice = input("Please select an item: ")
+
+  # Attempt to run selected function (adding to or calculating total)
+  try:
+    uchoice = int(user_choice)
+    try:
+        # try as function
+        os.system("clear")
+        action = prompts.get(uchoice)[2]
+        action()
 ```
 
 - 3c.iii : The findvalue procedure takes the input, “i”, which is the position value of one of the items that the user inputs. Then the procedure finds the value of the item from the pre-defined dictionary. Finally, the procedure outputs the price of the individual item and adds that value to the total cost.
