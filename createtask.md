@@ -87,7 +87,7 @@ user_choice = input("Please select an item: ")
         action()
 ```
 
-- 3c.iii : The findvalue procedure takes the input, “i”, which is the position value of one of the items that the user inputs. Then the procedure finds the value of the item from the pre-defined dictionary. Finally, the procedure outputs the price of the individual item and adds that value to the total cost.
+- 3c.iii : The priceadder procedure takes the input, “value”, which is the price of the item that the user selected. Then the procedure finds the current subtotal (important to make sure the user can calculate the price for more than one item). Finally, the procedure adds this price to the subtotal and prints the current subtotal out.
 - 3c.iv: First, the procedure finds the item in the itemArray that the position indicator “i” indicates. Then the procedure creates a new div for the html output for the user, makes it a “row” class for formatting. The program then outputs the name of the item itself, which is just “j”, and then outputs the price of the item, which is “dict[j]”, which references the pre-defined dictionary using the key, which is the item name. Finally, this is appended to the output div to be displayed to the user. Then the price of the item is added to the total using “total += dict[j]”, which will eventually be displayed later once all of the items are calculated with this procedure
 - 
 - 3d.i : 
