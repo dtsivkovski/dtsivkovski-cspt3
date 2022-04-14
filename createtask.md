@@ -13,6 +13,9 @@ Select "1" in this menu to view the create task.
 
 {% include repl_embed.html %}
 
+### Create Task Video - [[Link]](https://youtu.be/XLt2iPqYrBo)
+{% include ct_video.html %}
+
 ### Create Task Written Response
 
 - 3a.i : The overall purpose of the program is to take multiple inputs from a user with the items that the user wants, and then use it to calculate the total of those items. Then the user will receive a 20% discount if the value of the items is above $60. The program will display both the original total and then the discounted total if the discount is applicable.
