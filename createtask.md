@@ -88,29 +88,22 @@ user_choice = input("Please select an item: ")
 ```
 
 - 3c.iii : The priceadder procedure takes the input, “value”, which is the price of the item that the user selected. Then the procedure finds the current subtotal (important to make sure the user can calculate the price for more than one item). Finally, the procedure adds this price to the subtotal and prints the current subtotal out.
-- 3c.iv: First, the procedure finds the item in the itemArray that the position indicator “i” indicates. Then the procedure creates a new div for the html output for the user, makes it a “row” class for formatting. The program then outputs the name of the item itself, which is just “j”, and then outputs the price of the item, which is “dict[j]”, which references the pre-defined dictionary using the key, which is the item name. Finally, this is appended to the output div to be displayed to the user. Then the price of the item is added to the total using “total += dict[j]”, which will eventually be displayed later once all of the items are calculated with this procedure
-- 
+- 3c.iv: First, the procedure takes the global subtotal variable that is defined and saved outside of the procedure. Then the procedure takes the value parameter given depending on the user's item choice, and then adds it to the subtotal to make the new subtotal value. Finally, the new subtotal is printed in a string format for the user to be able to see the new subtotal value.
 - 3d.i : 
 
 First Call (first iteration of):
+```python
+["Shoes", 55, 'price_adder(55)'],
 ```
-for (var i = 0; i < itemArray.length; i++) {
-            findvalue(i);
-        }
-```
-_Where i is 0_
 
 Second Call (second iteration of):
+```python
+["Socks", 5, 'price_adder(5)'],
 ```
-for (var i = 0; i < itemArray.length; i++) {
-            findvalue(i);
-        }
-```
-_Where i is 1_
 
-- 3d.ii : In the first call, the conditions tested is the findvalue of “0”, which will find the value of the 0 (or first) term in the itemarray that was created based on the user’s input. In the second call, the condition tested is the findvalue of “1”, which will find the value of the 1 (or second) term in the itemarray from the user input.
+- 3d.ii : In the first call, the condition tested is the price_adder(55), in which the parameter is the value of the shoes option. This adds 55 to the current subtotal, and outputs the new subtotal for the user to see. In the second call, the condition tested is price_adder(5), the parameter is the value of the socks option. This adds 5 to the subtotal, and then outputs the new subtotal.
 
-- 3d.iii : Although the conditions of the first call as well as the number of calls to the procedure can vary based on user input, an example can be provided of the output. For example, if the first item in the user’s list is “Fu Shou Shan,” the procedure will take the first item in the list, find it’s name, and try to find the value of it in the dictionary, which is $39.00. For the second call, if the second item in the list is “Xin Gong Yi,” the procedure will find the second item, take the name of it, and find its value from the dictionary, which would be $21.00. 
+- 3d.iii : Although the order and parameters of the call can vary based on which option the user chooses at which time, the first call shown results in 55 being added to the subtotal value, which is the value of the shoes, and the new subtotal is then shown. Meanwhile, the second call shown results in 5 being added to the subtotal value, which is the value of the socks, with the new subtotal value being displayed. Both calls add a specified value to the subtotal and then display it for the user to be able to see what their subtotal is every time they input an item.
 
 
 
