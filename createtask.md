@@ -11,7 +11,7 @@ My plan is to have a shopping cart/price calculator that takes user input for it
 ### Runtime
 Select "1" in this menu to view the create task.
 
-{% include repl_embed.html %}
+{% include ct_embed.html %}
 
 ### Create Task Video - [[Link]](https://youtu.be/XLt2iPqYrBo)
 {% include ct_video.html %}
