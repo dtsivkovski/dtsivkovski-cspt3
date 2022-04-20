@@ -13,7 +13,7 @@ Select "1" in this menu to view the create task.
 
 {% include ct_embed.html %}
 
-### Create Task Video - [[Link]](https://youtu.be/XLt2iPqYrBo)
+### Create Task Video - [[Link]](https://youtu.be/ywAIoIxufvY)
 {% include ct_video.html %}
 
 ### Create Task Written Response
