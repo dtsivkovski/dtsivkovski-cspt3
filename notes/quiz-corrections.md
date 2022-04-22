@@ -33,3 +33,10 @@ The correct answer for the binary color triplet (11111111, 11111111, 11110000) r
 - Correct answer: D
 - My answer: B
 
+The data given by the information recorded for each transaction can be used to determine the total number of items purchased on a given date. However, I chose the method of payment that was used most during the 7-day period, which is possible to obtain but not using the method given in the choice that I picked.
+
+### Question 50 - Computer science midterm and final grades
+- Correct answer: D (I, II, and III)
+- My answer: C (I and III only)
+
+The data given in the table with the students' scores and their totals can show the average total points earned per student, the average increase in total points per student as a result of the policy, and the proportion of students who improved their total points because of it. I incorrectly assumed that the average increase in total points per student due to the policy was unable to be calculated.
