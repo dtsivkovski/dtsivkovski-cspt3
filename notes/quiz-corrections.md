@@ -22,3 +22,14 @@ An IP address is not something that can compromise a user's privacy, as it is us
 A digital certificate actually verify that the website you are connected to has encrypted keys for secure communication.
 
 ## Proctored Quiz 2 Corrections
+![image](https://user-images.githubusercontent.com/89223402/164786705-4649e461-8fbe-4c70-9b87-56d768c2f9d2.png)
+### Question 31 - Color represented by binary triplet
+- Correct answer: A
+- My answer: B
+
+The correct answer for the binary color triplet (11111111, 11111111, 11110000) represents 255, 255, 240 which is the color code for Ivory. I thought it represented 255, 255, 225 which is the color code for Light Yellow.
+
+### Question 41 - Clothing store sales information
+- Correct answer: D
+- My answer: B
+
