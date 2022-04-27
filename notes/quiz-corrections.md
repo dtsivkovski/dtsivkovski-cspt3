@@ -40,3 +40,18 @@ The data given by the information recorded for each transaction can be used to d
 - My answer: C (I and III only)
 
 The data given in the table with the students' scores and their totals can show the average total points earned per student, the average increase in total points per student as a result of the policy, and the proportion of students who improved their total points because of it. I incorrectly assumed that the average increase in total points per student due to the policy was unable to be calculated.
+
+## Proctored Quiz 3 Corrections
+![image](https://user-images.githubusercontent.com/89223402/165602041-9ee5293c-09fa-4a12-bc14-cf6d6024d0e8.png)
+
+### Question 17 - Test cases for procedure Smallest
+- Correct answer: C and D
+- My answer: D
+
+I forgot to select a second answer, but the second list "theList <- [30,40,20,10]" also provides a wrong output for the function in addition to "theList <- [40,30,20,10]
+
+### Question 44 - Abstraction with procedures Square and Cube
+- Correct answer: D
+- My answer: B
+
+I selected that a generalization of the square(n) and cube(n) procedures would be a fourth(n), but a generalization is actually power(n,m) because it generalizes the functions into something that can be applied for any power value.
