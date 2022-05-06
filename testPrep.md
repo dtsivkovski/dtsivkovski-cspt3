@@ -5,6 +5,9 @@
 
 # Test Prep Section
 
+### AP Exam Week 1
+- Collegeboard AP Practice Quiz 5 - 48/50
+
 ### Week 6
 - [Collegeboard AP Practice Quizzes](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/quiz-corrections) - Notes + Actions
 
