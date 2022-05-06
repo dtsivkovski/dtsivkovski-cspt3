@@ -7,6 +7,9 @@
 
 ### AP Exam Week 1
 - Collegeboard AP Practice Quiz 5 - 48/50
+- Corrections:
+  - Q9: Sorting data takes the most time when an increase of users happens, as it increases 100-fold as opposed to the 10-fold that I had picked.
+  - Q16: Program A and B actually display the same values in the same order. I thought they displayed different values. 
 
 ### Week 6
 - [Collegeboard AP Practice Quizzes](https://dtsivkovski.github.io/dtsivkovski-cspt3/notes/quiz-corrections) - Notes + Actions
